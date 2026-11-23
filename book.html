@@ -29,6 +29,7 @@
       --body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
       --mono: "SFMono-Regular", "Menlo", "Roboto Mono", monospace;
       --content: 1120px;
+      --kai: "Kaiti SC", "STKaiti", "KaiTi", "Noto Serif CJK SC", serif;
     }
     * { box-sizing: border-box; }
     html {
@@ -260,6 +261,38 @@
       .card { box-shadow: none; }
       section.section { padding: 1.4rem 0; break-inside: avoid-page; }
     }
+/* ---------- landmark vignettes (woodblock-print style line drawings) ---------- */
+.vignette { margin: 0 0 1.1rem; }
+.vignette figcaption {
+  margin-top: .3rem;
+  text-align: center;
+  font-family: var(--kai);
+  font-size: .8rem;
+  letter-spacing: .12em;
+  color: var(--ink-soft);
+}
+.vg { display: block; width: 100%; height: auto; max-height: 220px; }
+.vg .wall { fill: #f8f6f0; stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; }
+.vg .cap { stroke: var(--ink); stroke-width: 5; }
+.vg .dark { fill: var(--ink); }
+.vg .line { fill: none; stroke: var(--ink); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+.vg .far { fill: none; stroke: var(--ink); stroke-width: 1; opacity: .35; stroke-linejoin: round; }
+.vg .water { fill: #dbe3e2; }
+.vg .ripple { stroke: #f8f6f0; stroke-width: 1.6; stroke-linecap: round; }
+.vg .pine { fill: #3d6150; stroke: var(--ink); stroke-width: 1.2; stroke-linejoin: round; }
+.vg .rock { fill: #d3d9d7; stroke: var(--ink); stroke-width: 1.4; stroke-linejoin: round; }
+.vg .wood { fill: #7a5a40; }
+.vg .wood-line { stroke: #5a4230; stroke-width: 5; }
+.vg .sun { fill: #e4a845; }
+.vg .ray { stroke: #c47f1e; stroke-width: 2; stroke-linecap: round; }
+.vg .cloud { fill: #f7f8f7; stroke: var(--ink); stroke-width: 1.1; stroke-linejoin: round; }
+.vg .red { fill: #c8553d; }
+.vg .gold { fill: #e3b552; }
+.vg .spark { stroke: #d39b35; stroke-width: 1.6; stroke-linecap: round; }
+.vg .whisker { stroke-width: 1.8; }
+
+
+    .day .vignette { margin: -.2rem 0 1rem; }
   
 /* ================= book edition ================= */
 :root {
