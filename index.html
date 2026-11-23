@@ -506,7 +506,7 @@
 
     <div class="card" style="margin-top:1.2rem">
       <h3 style="font-size:1.15rem">山顶逐时：11/27 上山到 11/28 下山</h3>
-      <p style="margin:.3rem 0 0;color:var(--ink-soft);font-size:.92rem">体感温度已经算上了风的影响。看日出时人站着不动，会比这个数字感觉更冷。</p>
+      <p style="margin:.3rem 0 0;color:var(--ink-soft);font-size:.92rem">体感温度已经算上了风的影响，看日出时人站着不动，会比这个数字感觉更冷。能见度用来判断有没有雾：模型反映不了山谷里局部的雾，仅供参考。</p>
       <div class="hourly-wrap">
         <table class="hourly" id="wxHourly"></table>
       </div>
@@ -853,15 +853,15 @@
     },
     sun: { sunrise: ["06:40", "06:41", "06:42", "06:43", "06:43"], sunset: ["17:07", "17:07", "17:07", "17:07", "17:07"] },
     hourly: {
-      "2026-11-27T10:00": [9.5, 6.4, 16.6, 0],
-      "2026-11-27T13:00": [12.5, 9.6, 18.7, 0],
-      "2026-11-27T17:00": [5.8, 2.3, 31.0, 0],
-      "2026-11-27T20:00": [3.1, 0.3, 31.0, 0],
-      "2026-11-28T04:00": [1.4, -1.7, 17.3, 0],
-      "2026-11-28T06:00": [2.6, -0.6, 20.5, 0],
-      "2026-11-28T09:00": [7.6, 4.1, 32.8, 0],
-      "2026-11-28T10:00": [9.7, 5.7, 39.6, 0],
-      "2026-11-28T12:00": [12.3, 8.0, 52.9, 0]
+      "2026-11-27T10:00": [9.5, 6.4, 16.6, 0, 32260],
+      "2026-11-27T13:00": [12.5, 9.6, 18.7, 0, 33080],
+      "2026-11-27T17:00": [5.8, 2.3, 31.0, 0, 30900],
+      "2026-11-27T20:00": [3.1, 0.3, 31.0, 0, 26900],
+      "2026-11-28T04:00": [1.4, -1.7, 17.3, 0, 29480],
+      "2026-11-28T06:00": [2.6, -0.6, 20.5, 0, 30580],
+      "2026-11-28T09:00": [7.6, 4.1, 32.8, 0, 30880],
+      "2026-11-28T10:00": [9.7, 5.7, 39.6, 0, 31420],
+      "2026-11-28T12:00": [12.3, 8.0, 52.9, 0, null]
     }
   };
 
@@ -884,6 +884,13 @@
     var level = g >= 62 ? "约 8 级" : g >= 50 ? "约 7 级" : g >= 39 ? "约 6 级" : g >= 29 ? "约 5 级" : "4 级以下";
     var cls = g >= 50 ? ' class="gust-strong"' : "";
     return '<span' + cls + '>阵风 ' + r(g) + ' km/h（' + level + '）</span>';
+  }
+  function visCell(m) {
+    if (m == null) return "<td>—</td>";
+    var txt = m >= 10000 ? r(m / 1000) + " km" : m >= 1000 ? (Math.round(m / 100) / 10).toFixed(1) + " km" : Math.round(m) + " m";
+    if (m < 200) return '<td class="gust-strong">' + txt + "<br><small>浓雾</small></td>";
+    if (m < 1000) return '<td class="gust-strong">' + txt + "<br><small>有雾</small></td>";
+    return "<td>" + txt + "</td>";
   }
   function placeById(id) { for (var i = 0; i < PLACES.length; i++) if (PLACES[i].id === id) return PLACES[i]; }
 
@@ -913,18 +920,19 @@
   function renderHourly(data) {
     var t = document.getElementById("wxHourly");
     var head = "<thead><tr><th>黄山山顶</th>";
-    var rowT = "<tr><th>气温</th>", rowA = "<tr><th>体感</th>", rowG = "<tr><th>阵风</th>", rowW = "<tr><th>天气</th>";
+    var rowT = "<tr><th>气温</th>", rowA = "<tr><th>体感</th>", rowG = "<tr><th>阵风</th>", rowW = "<tr><th>天气</th>", rowV = "<tr><th>能见度</th>";
     for (var i = 0; i < HOURS.length; i++) {
       var v = data.hourly[HOURS[i][0]];
       head += "<th>" + HOURS[i][1] + "<br><small>" + HOURS[i][2] + "</small></th>";
-      if (!v) { rowT += "<td>—</td>"; rowA += "<td>—</td>"; rowG += "<td>—</td>"; rowW += "<td>—</td>"; continue; }
+      if (!v) { rowT += "<td>—</td>"; rowA += "<td>—</td>"; rowG += "<td>—</td>"; rowW += "<td>—</td>"; rowV += "<td>—</td>"; continue; }
       rowT += "<td>" + r(v[0]) + "°C</td>";
       rowA += "<td>" + r(v[1]) + "°C</td>";
       rowG += "<td" + (v[2] >= 50 ? ' class="gust-strong"' : "") + ">" + r(v[2]) + "</td>";
       rowW += "<td>" + wmo(v[3])[0] + "</td>";
+      rowV += visCell(v[4]);
     }
-    t.innerHTML = head + "</tr></thead><tbody>" + rowW + "</tr>" + rowT + "</tr>" + rowA + "</tr>" + rowG + "</tr></tbody>" +
-      '<caption style="caption-side:bottom;text-align:left;font-size:.8rem;color:#4a575b;padding-top:.4rem">阵风单位 km/h；50 以上（约 7 级）标红，索道可能限速或停运。</caption>';
+    t.innerHTML = head + "</tr></thead><tbody>" + rowW + "</tr>" + rowT + "</tr>" + rowA + "</tr>" + rowG + "</tr>" + rowV + "</tr></tbody>" +
+      '<caption style="caption-side:bottom;text-align:left;font-size:.8rem;color:#4a575b;padding-top:.4rem">阵风单位 km/h；50 以上（约 7 级）标红，索道可能限速或停运。能见度低于 1 公里算雾，低于 200 米算浓雾，都会标红。</caption>';
   }
 
   function setStatus(text, live) {
@@ -947,7 +955,7 @@
         out.sun.sunset = dly.sunset.map(function (s) { return s.slice(11, 16); });
         var h = json[i].hourly;
         for (var k = 0; k < h.time.length; k++) {
-          out.hourly[h.time[k]] = [h.temperature_2m[k], h.apparent_temperature[k], h.wind_gusts_10m[k], h.weather_code[k]];
+          out.hourly[h.time[k]] = [h.temperature_2m[k], h.apparent_temperature[k], h.wind_gusts_10m[k], h.weather_code[k], h.visibility ? h.visibility[k] : null];
         }
       }
     }
@@ -963,7 +971,7 @@
     "&longitude=" + PLACES.map(function (p) { return p.lon; }).join(",") +
     "&elevation=" + PLACES.map(function (p) { return p.elev; }).join(",") +
     "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_gusts_10m_max,sunrise,sunset" +
-    "&hourly=temperature_2m,apparent_temperature,wind_gusts_10m,weather_code" +
+    "&hourly=temperature_2m,apparent_temperature,wind_gusts_10m,weather_code,visibility" +
     "&timezone=Asia%2FShanghai&start_date=" + DATES[0] + "&end_date=" + DATES[DATES.length - 1];
 
   var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
