@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026年11月25日至28日 厦门—宏村—黄山—唐模 四日亲子行程：逐日安排、天气、穿衣建议与上黄山路线。">
+  <meta name="theme-color" content="#1f2a2e">
+  <title>粉墙黛瓦，一山松云｜2026-11 宏村·黄山·唐模亲子四日行</title>
+  <style>
+    :root {
+      --ink: #1f2a2e;
+      --ink-soft: #4a575b;
+      --tile: #3b4549;
+      --wall: #f6f3ec;
+      --paper: #fbfaf6;
+      --white: #ffffff;
+      --pine: #3d6150;
+      --pine-light: #e5eee8;
+      --cinnabar: #b4442e;
+      --cinnabar-light: #f7e6e0;
+      --gold: #b88a2e;
+      --gold-light: #f7efdc;
+      --sky: #3b6c8c;
+      --sky-light: #e3edf3;
+      --line: rgba(31, 42, 46, 0.14);
+      --shadow: 0 14px 40px rgba(31, 42, 46, 0.10);
+      --radius: 18px;
+      --display: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", serif;
+      --body: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --mono: "SFMono-Regular", "Menlo", "Roboto Mono", monospace;
+      --content: 1120px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--body);
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--sky); }
+    :focus-visible { outline: 3px solid var(--cinnabar); outline-offset: 3px; }
+    .shell { width: min(calc(100% - 36px), var(--content)); margin-inline: auto; }
+    h1, h2, h3 { font-family: var(--display); line-height: 1.3; margin: 0; }
+    .eyebrow {
+      margin: 0 0 .4rem;
+      color: var(--cinnabar);
+      font-family: var(--mono);
+      font-size: .74rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      position: relative;
+      color: var(--white);
+      background: linear-gradient(180deg, #2a373c 0%, #1f2a2e 100%);
+      overflow: hidden;
+    }
+    .hero svg.ridge { position: absolute; inset: auto 0 0 0; width: 100%; height: 46%; }
+    .hero-inner { position: relative; padding: 4.5rem 0 7.5rem; }
+    .hero .eyebrow { color: #e9b9a9; }
+    .hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); letter-spacing: .04em; }
+    .hero .lede { max-width: 640px; margin: 1rem 0 1.6rem; color: #d8dfdf; font-size: 1.05rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; margin: 0; list-style: none; }
+    .chips li {
+      padding: .3rem .8rem;
+      border: 1px solid rgba(255,255,255,.28);
+      border-radius: 999px;
+      font-size: .88rem;
+      background: rgba(255,255,255,.06);
+    }
+
+    /* ---------- nav ---------- */
+    nav.toc {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251, 250, 246, .94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    nav.toc ul {
+      display: flex; gap: .2rem; margin: 0 auto; padding: .45rem 0;
+      list-style: none; overflow-x: auto; scrollbar-width: none;
+    }
+    nav.toc a {
+      display: block; white-space: nowrap;
+      padding: .35rem .8rem; border-radius: 999px;
+      color: var(--ink); text-decoration: none; font-size: .92rem;
+    }
+    nav.toc a:hover { background: var(--wall); }
+
+    /* ---------- sections ---------- */
+    section.section { padding: 3.6rem 0; }
+    section.tint { background: var(--wall); }
+    .section-head { max-width: 720px; margin-bottom: 1.8rem; }
+    .section-head h2 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
+    .section-head p { margin: .6rem 0 0; color: var(--ink-soft); }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.3rem 1.4rem;
+    }
+    .grid { display: grid; gap: 1rem; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+
+    .placeholder {
+      display: inline-block;
+      padding: 0 .45rem;
+      border: 1px dashed var(--gold);
+      border-radius: 6px;
+      background: var(--gold-light);
+      color: #7a5a14;
+      font-size: .9em;
+    }
+    .note {
+      border-left: 4px solid var(--gold);
+      background: var(--gold-light);
+      padding: .8rem 1rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1rem 0;
+    }
+    .note.warn { border-color: var(--cinnabar); background: var(--cinnabar-light); }
+    .note.good { border-color: var(--pine); background: var(--pine-light); }
+    .note p { margin: .2rem 0; }
+
+    /* ---------- overview ---------- */
+    .overview { display: grid; gap: 1.2rem; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: start; }
+    @media (max-width: 860px) { .overview { grid-template-columns: 1fr; } }
+    .timeline { list-style: none; margin: 0; padding: 0; }
+    .timeline li {
+      position: relative;
+      padding: 0 0 1.2rem 4.6rem;
+    }
+    .timeline li::before {
+      content: ""; position: absolute; left: 1.85rem; top: 2.4rem; bottom: 0;
+      border-left: 2px dotted var(--line);
+    }
+    .timeline li:last-child::before { display: none; }
+    .timeline .date {
+      position: absolute; left: 0; top: 0;
+      width: 3.8rem; height: 3.8rem; border-radius: 50%;
+      display: grid; place-content: center; text-align: center;
+      background: var(--ink); color: var(--white);
+      font-family: var(--display); line-height: 1.1;
+    }
+    .timeline .date b { display: block; font-size: 1.25rem; }
+    .timeline .date small { font-size: .7rem; opacity: .8; }
+    .timeline h3 { font-size: 1.15rem; padding-top: .35rem; }
+    .timeline p { margin: .25rem 0 0; color: var(--ink-soft); }
+    .timeline .sleep { font-size: .88rem; color: var(--pine); }
+    .map-card svg { width: 100%; height: auto; display: block; }
+    .map-card figcaption { font-size: .85rem; color: var(--ink-soft); margin-top: .5rem; }
+
+    /* ---------- itinerary ---------- */
+    .day { margin-bottom: 1.4rem; }
+    .day-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem 1rem; margin-bottom: .8rem; }
+    .day-head h3 { font-size: 1.4rem; }
+    .day-head .tag {
+      font-size: .8rem; padding: .1rem .6rem; border-radius: 999px;
+      background: var(--pine-light); color: var(--pine);
+    }
+    .day-head .tag.hard { background: var(--cinnabar-light); color: var(--cinnabar); }
+    .schedule { width: 100%; border-collapse: collapse; }
+    .schedule th, .schedule td { text-align: left; vertical-align: top; padding: .55rem .4rem; border-top: 1px solid var(--line); }
+    .schedule th { width: 5.6rem; font-family: var(--mono); font-size: .85rem; color: var(--cinnabar); font-weight: 700; white-space: nowrap; }
+    .schedule td small { color: var(--ink-soft); }
+    .day-extra { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: .9rem; }
+    .day-extra div { background: var(--wall); border-radius: 12px; padding: .7rem .9rem; font-size: .93rem; }
+    .day-extra h4 { margin: 0 0 .2rem; font-size: .95rem; }
+    .day-extra ul { margin: 0; padding-left: 1.1rem; }
+
+    /* ---------- weather ---------- */
+    .wx-status { font-size: .9rem; color: var(--ink-soft); margin-bottom: 1rem; }
+    .wx-status .dot { display: inline-block; width: .6rem; height: .6rem; border-radius: 50%; background: var(--gold); margin-right: .35rem; vertical-align: middle; }
+    .wx-status.live .dot { background: var(--pine); }
+    .wx-day h3 { font-size: 1.15rem; margin-bottom: .6rem; }
+    .wx-day h3 small { font-family: var(--body); font-size: .8rem; color: var(--ink-soft); font-weight: 400; }
+    .wx-place { display: grid; grid-template-columns: 2.4rem 1fr auto; gap: .2rem .7rem; align-items: center; padding: .6rem 0; border-top: 1px solid var(--line); }
+    .wx-place .ico { font-size: 1.7rem; line-height: 1; }
+    .wx-place .name { font-weight: 600; }
+    .wx-place .name small { display: block; font-weight: 400; color: var(--ink-soft); font-size: .8rem; }
+    .wx-place .temp { font-family: var(--display); font-size: 1.25rem; text-align: right; white-space: nowrap; }
+    .wx-place .temp .lo { color: var(--sky); }
+    .wx-place .temp .hi { color: var(--cinnabar); }
+    .wx-place .meta { grid-column: 2 / 4; font-size: .82rem; color: var(--ink-soft); }
+    .wx-place.peak { background: var(--sky-light); border-radius: 10px; padding-inline: .5rem; border-top-color: transparent; }
+    .gust-strong { color: var(--cinnabar); font-weight: 700; }
+    .hourly-wrap { overflow-x: auto; margin-top: 1rem; }
+    table.hourly { border-collapse: collapse; min-width: 640px; width: 100%; font-size: .9rem; }
+    table.hourly th, table.hourly td { padding: .45rem .5rem; text-align: center; border-bottom: 1px solid var(--line); }
+    table.hourly thead th { font-weight: 600; background: var(--wall); }
+    table.hourly td:first-child, table.hourly th:first-child { text-align: left; white-space: nowrap; }
+
+    /* ---------- clothing ---------- */
+    .layers { list-style: none; margin: .5rem 0 0; padding: 0; }
+    .layers li { display: grid; grid-template-columns: 4.6rem 1fr; gap: .6rem; padding: .45rem 0; border-top: 1px solid var(--line); }
+    .layers li b { color: var(--pine); font-size: .9rem; }
+    .checklist { columns: 2 220px; margin: .4rem 0 0; padding-left: 1.1rem; }
+    .checklist li { break-inside: avoid; margin-bottom: .2rem; }
+    .who { display: inline-block; font-size: .78rem; padding: 0 .5rem; border-radius: 999px; background: var(--sky-light); color: var(--sky); margin-left: .3rem; }
+
+    /* ---------- huangshan ---------- */
+    .route-wrap { display: grid; gap: 1.2rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+    @media (max-width: 900px) { .route-wrap { grid-template-columns: 1fr; } }
+    .route-map svg { width: 100%; height: auto; display: block; }
+    .legend { display: flex; flex-wrap: wrap; gap: .4rem 1rem; font-size: .85rem; margin-top: .5rem; }
+    .legend span::before { content: ""; display: inline-block; width: 1.4rem; height: 0; border-top: 3px solid; vertical-align: middle; margin-right: .35rem; }
+    .legend .l1::before { border-color: var(--cinnabar); }
+    .legend .l2::before { border-color: var(--pine); }
+    .legend .l3::before { border-color: var(--ink-soft); border-top-style: dashed; }
+    .legend .l4::before { border-color: var(--sky); border-top-width: 4px; }
+    .steps { list-style: none; margin: 0; padding: 0; counter-reset: s; }
+    .steps li { position: relative; padding: .55rem 0 .55rem 2.6rem; border-top: 1px solid var(--line); }
+    .steps li::before {
+      counter-increment: s; content: counter(s);
+      position: absolute; left: 0; top: .6rem;
+      width: 1.8rem; height: 1.8rem; border-radius: 50%;
+      display: grid; place-content: center;
+      font-size: .85rem; font-weight: 700; color: var(--white);
+    }
+    .steps.d1 li::before { background: var(--cinnabar); }
+    .steps.d2 li::before { background: var(--pine); }
+    .steps .t { font-family: var(--mono); font-size: .8rem; color: var(--ink-soft); }
+    .steps .lvl { font-size: .75rem; padding: 0 .45rem; border-radius: 999px; background: var(--pine-light); color: var(--pine); margin-left: .3rem; }
+    .steps .lvl.mid { background: var(--gold-light); color: #7a5a14; }
+    .steps .lvl.hard { background: var(--cinnabar-light); color: var(--cinnabar); }
+    .steps p { margin: .15rem 0 0; font-size: .93rem; color: var(--ink-soft); }
+    table.price { width: 100%; border-collapse: collapse; font-size: .93rem; }
+    table.price th, table.price td { padding: .5rem .4rem; border-top: 1px solid var(--line); text-align: left; vertical-align: top; }
+    table.price thead th { border-top: 0; color: var(--ink-soft); font-weight: 600; font-size: .85rem; }
+    .compare { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .compare .card h3 { font-size: 1.1rem; margin-bottom: .3rem; }
+    .compare .card.pick { border: 2px solid var(--pine); }
+    .compare ul { margin: .3rem 0 0; padding-left: 1.1rem; }
+    .plan-b td:first-child { font-weight: 600; white-space: nowrap; }
+
+    /* ---------- footer ---------- */
+    .sources { padding: 2.6rem 0 3.4rem; background: var(--ink); color: #c9d1d1; font-size: .9rem; }
+    .sources h2 { color: var(--white); font-size: 1.3rem; margin-bottom: .8rem; }
+    .sources a { color: #e9c3b6; }
+    .sources ul { padding-left: 1.1rem; }
+
+    @media print {
+      nav.toc { display: none; }
+      .hero { color: var(--ink); background: none; }
+      .hero svg.ridge { display: none; }
+      .card { box-shadow: none; }
+      section.section { padding: 1.4rem 0; break-inside: avoid-page; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <svg class="ridge" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 210 L90 150 L150 185 L230 95 L300 160 L360 120 L430 175 L520 70 L590 150 L660 110 L740 170 L820 90 L900 160 L980 130 L1060 180 L1140 120 L1200 160 L1200 300 L0 300 Z" fill="#33424a" opacity=".85"/>
+    <path d="M0 250 L110 200 L200 235 L300 180 L400 230 L500 190 L610 240 L720 195 L830 235 L940 200 L1050 240 L1200 205 L1200 300 L0 300 Z" fill="#fbfaf6" opacity=".07"/>
+    <path d="M0 300 L0 265 L120 250 L120 232 L160 214 L200 232 L200 250 L300 250 L300 226 L345 206 L390 226 L390 250 L520 252 L520 236 L555 220 L590 236 L590 252 L1200 262 L1200 300 Z" fill="#fbfaf6"/>
+  </svg>
+  <div class="shell hero-inner">
+    <p class="eyebrow">2026.11.25 — 11.28 · 亲子四日</p>
+    <h1>粉墙黛瓦，一山松云</h1>
+    <p class="lede">厦门北坐动车到黄山北。前两天在宏村慢慢逛，第三天坐索道上黄山、住北海，看日落日出，第四天经迎客松下山，最后在唐模水街收尾后回厦门。</p>
+    <ul class="chips">
+      <li>👨‍👩‍👧‍👦 父母 + 9 岁女儿 + 7 岁儿子</li>
+      <li>🚄 动车往返</li>
+      <li>🏯 宏村 2 晚</li>
+      <li>⛰️ 黄山雲麓北海宾馆 1 晚</li>
+    </ul>
+  </div>
+</header>
+
+<nav class="toc" aria-label="页面目录">
+  <ul class="shell">
+    <li><a href="#overview">行程总览</a></li>
+    <li><a href="#itinerary">每日安排</a></li>
+    <li><a href="#weather">天气</a></li>
+    <li><a href="#clothing">穿衣</a></li>
+    <li><a href="#huangshan">上黄山路线</a></li>
+    <li><a href="#tips">出发前清单</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<!-- ================= 总览 ================= -->
+<section class="section" id="overview">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">OVERVIEW</p>
+      <h2>行程总览</h2>
+      <p>四天里只有 11/27–28 两天爬山，其余都是平地古村。车程最长的一段是厦门到黄山的动车。</p>
+    </div>
+    <div class="overview">
+      <ol class="timeline">
+        <li>
+          <span class="date"><span><b>25</b><small>周三</small></span></span>
+          <h3>厦门北 → 黄山北 → 宏村</h3>
+          <p>动车 <span class="placeholder">车次待填</span>，到站后打车约 1 小时到宏村。傍晚月沼、南湖散步。</p>
+          <p class="sleep">🛏 宏村 <span class="placeholder">酒店待填</span></p>
+        </li>
+        <li>
+          <span class="date"><span><b>26</b><small>周四</small></span></span>
+          <h3>宏村一整天</h3>
+          <p>清晨南湖，上午进村看月沼、承志堂，下午可选卢村木雕楼或塔川。</p>
+          <p class="sleep">🛏 宏村 <span class="placeholder">酒店待填</span></p>
+        </li>
+        <li>
+          <span class="date"><span><b>27</b><small>周五</small></span></span>
+          <h3>宏村 → 汤口 → 云谷索道上山</h3>
+          <p>始信峰、北海一带轻松走，傍晚去排云亭看日落。</p>
+          <p class="sleep">🛏 黄山雲麓北海宾馆（海拔约 1630 米）</p>
+        </li>
+        <li>
+          <span class="date"><span><b>28</b><small>周六</small></span></span>
+          <h3>日出 → 光明顶 → 迎客松 → 玉屏索道下山 → 唐模 → 回厦门</h3>
+          <p>中午前下到山下，下午逛唐模，傍晚从黄山北坐动车回厦门。</p>
+          <p class="sleep">🚄 动车 <span class="placeholder">车次待填</span></p>
+        </li>
+      </ol>
+
+      <figure class="card map-card" style="margin:0">
+        <svg viewBox="0 0 560 540" role="img" aria-labelledby="mapTitle">
+          <title id="mapTitle">行程路线示意图：黄山北站、宏村、汤口、黄山北海、唐模的相对位置</title>
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#b4442e"/>
+            </marker>
+            <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M0 0 L10 5 L0 10 z" fill="#3d6150"/>
+            </marker>
+          </defs>
+          <rect x="0" y="0" width="560" height="540" rx="14" fill="#f6f3ec"/>
+          <!-- mountains -->
+          <g fill="#dfe4de" stroke="#c4ccc5">
+            <path d="M200 160 L240 70 L265 110 L285 55 L320 120 L345 95 L380 170 Z"/>
+          </g>
+          <text x="300" y="40" text-anchor="middle" font-size="13" fill="#4a575b">黄山风景区</text>
+          <!-- day 25: 黄山北 -> 宏村 -->
+          <path d="M440 470 C 330 420, 180 330, 96 248" fill="none" stroke="#b4442e" stroke-width="3" marker-end="url(#arr)"/>
+          <text x="250" y="400" font-size="12" fill="#b4442e" transform="rotate(32 250 400)">11/25 约 70km · 1h10</text>
+          <!-- day 27: 宏村 -> 汤口 -->
+          <path d="M96 236 C 150 200, 210 170, 262 156" fill="none" stroke="#b4442e" stroke-width="3" marker-end="url(#arr)"/>
+          <text x="132" y="236" font-size="12" fill="#b4442e" transform="rotate(-27 132 236)">11/27 约 55km · 1h</text>
+          <!-- 汤口 -> 北海 -->
+          <path d="M276 146 L284 100" fill="none" stroke="#3b6c8c" stroke-width="4" stroke-dasharray="2 5" stroke-linecap="round"/>
+          <text x="296" y="128" font-size="11" fill="#3b6c8c">景交车 + 索道</text>
+          <!-- day 28: 汤口 -> 唐模 -> 黄山北 -->
+          <path d="M284 160 C 360 230, 430 320, 466 392" fill="none" stroke="#3d6150" stroke-width="3" marker-end="url(#arrG)"/>
+          <text x="388" y="270" font-size="12" fill="#3d6150" transform="rotate(52 388 270)">11/28 约 60km · 1h</text>
+          <path d="M468 412 L450 458" fill="none" stroke="#3d6150" stroke-width="3" marker-end="url(#arrG)"/>
+          <text x="474" y="442" font-size="11" fill="#3d6150">约 15km · 25min</text>
+          <!-- Xiamen -->
+          <path d="M432 480 L432 520" stroke="#1f2a2e" stroke-width="2" stroke-dasharray="5 4"/>
+          <text x="420" y="528" font-size="12" text-anchor="end" fill="#1f2a2e">⇅ 厦门北（动车，用时以 12306 为准）</text>
+          <!-- nodes -->
+          <g font-size="14" font-weight="600" fill="#1f2a2e">
+            <circle cx="88" cy="240" r="8" fill="#b4442e"/><text x="40" y="270">宏村</text>
+            <circle cx="272" cy="152" r="7" fill="#1f2a2e"/><text x="262" y="138" text-anchor="end">汤口换乘中心</text>
+            <circle cx="284" cy="92" r="8" fill="#3b6c8c"/><text x="300" y="88">北海宾馆</text>
+            <circle cx="470" cy="402" r="8" fill="#3d6150"/><text x="486" y="400">唐模</text>
+            <circle cx="444" cy="470" r="8" fill="#1f2a2e"/><text x="460" y="484">黄山北站</text>
+          </g>
+          <text x="20" y="28" font-size="12" fill="#4a575b">N ↑ 示意图，比例不精确</text>
+        </svg>
+        <figcaption>距离和车程是大致估计，出发前请用导航确认。从宏村、汤口、唐模之间移动，一家四口带行李，打车或包车最省事。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 每日安排 ================= -->
+<section class="section tint" id="itinerary">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">DAY BY DAY</p>
+      <h2>每日安排</h2>
+      <p>时间点按孩子的节奏留了余量。动车车次确定后，第一天和最后一天的时间请据此调整。</p>
+    </div>
+
+    <!-- Day 1 -->
+    <article class="card day" id="d1">
+      <div class="day-head">
+        <h3>11/25 周三 · 出发去宏村</h3>
+        <span class="tag">交通日</span>
+      </div>
+      <table class="schedule">
+        <tr><th>上午</th><td>厦门北 → 黄山北，动车 <span class="placeholder">去程车次 / 发车时间待填</span>。<br><small>车上备好零食、绘本或平板，孩子能安静坐几个小时。</small></td></tr>
+        <tr><th>到站后</th><td>黄山北站 → 宏村，打车或预约包车约 1 小时 10 分钟。<br><small>也有到宏村的旅游直通车（约 90 分钟、约 30 元/人，末班约 17:30，携程游记说法），带两个孩子加行李不推荐。</small></td></tr>
+        <tr><th>傍晚</th><td>入住后，到 <b>南湖</b> 和 <b>月沼</b> 散步，看灯亮起来、倒影映在水里。<br><small>宏村石板路多，拉杆箱不好拖，可以先问酒店能否到村口接行李。</small></td></tr>
+        <tr><th>晚饭</th><td>徽菜入门：毛豆腐、臭鳜鱼（味道重，孩子可能不爱）、笋干烧肉、石鸡（注意是否野生）。给孩子点一份蒸蛋或青菜。</td></tr>
+      </table>
+      <div class="day-extra">
+        <div><h4>🎫 宏村门票</h4>携程标价 104 元，优惠后约 94 元起；游记称 3 天内可多次进出。儿童政策没找到可靠来源，购票时确认。住在村里也需要门票。</div>
+        <div><h4>🌡 天气</h4>11/25 多云转阴，早晚约 2°C，白天约 14°C。到站时就要穿外套。</div>
+      </div>
+    </article>
+
+    <!-- Day 2 -->
+    <article class="card day" id="d2">
+      <div class="day-head">
+        <h3>11/26 周四 · 宏村慢游</h3>
+        <span class="tag">轻松</span>
+      </div>
+      <table class="schedule">
+        <tr><th>07:00</th><td><b>南湖晨雾</b>：起个早去南湖，游客少、水面平静，最容易拍到倒影。<br><small>孩子起不来就放到傍晚，不必勉强。</small></td></tr>
+        <tr><th>08:30</th><td>早饭后进村：<b>月沼</b> → <b>汪氏宗祠（乐叙堂）</b> → <b>承志堂</b>（木雕精细，被称为“民间故宫”） → <b>南湖书院</b>。<br><small>可以让孩子找一找水圳从哪家门口流过，宏村的“牛形村落”水系很适合讲给孩子听。</small></td></tr>
+        <tr><th>12:00</th><td>午饭，回酒店午休。</td></tr>
+        <tr><th>14:30</th><td>二选一（打车 5–10 分钟）：<br>· <b>卢村木雕楼</b>：近，看一整栋楼的木雕。<br>· <b>塔川</b>：秋色出名，但 11 月下旬乌桕叶可能已经掉得差不多，去之前看一眼近期照片再决定。</td></tr>
+        <tr><th>16:30</th><td>回宏村，买点黄山烧饼当第二天上山的零食。早点吃晚饭、早点睡，<b>第二天 7:30 出发</b>。</td></tr>
+      </table>
+      <div class="day-extra">
+        <div><h4>🎒 今晚整理行李</h4>把上山要带的东西装进 1–2 个轻背包（见“穿衣”和“出发前清单”），大件行李第二天寄存在山下。</div>
+        <div><h4>🌡 天气</h4>11/26 阴，可能有零星毛毛雨（降水概率约 6%），约 9–18°C。带把折叠伞就够。</div>
+      </div>
+    </article>
+
+    <!-- Day 3 -->
+    <article class="card day" id="d3">
+      <div class="day-head">
+        <h3>11/27 周五 · 上黄山，住北海</h3>
+        <span class="tag hard">爬山日 · 走路约 3–4 小时</span>
+      </div>
+      <table class="schedule">
+        <tr><th>07:30</th><td>宏村 → 汤口（寨西）换乘中心，打车约 1 小时。</td></tr>
+        <tr><th>08:40</th><td><b>寄存大件行李</b>，第二天下山从同一个换乘中心出来再取。检票坐景交车去云谷寺（约 20–30 分钟）。</td></tr>
+        <tr><th>09:30</th><td><b>云谷索道</b>上山到白鹅岭（约 10 分钟）。</td></tr>
+        <tr><th>10:00</th><td>白鹅岭 → <b>始信峰</b>环线（黑虎松、连理松、始信峰）→ 北海宾馆，约 1.5–2 小时。</td></tr>
+        <tr><th>12:00</th><td>到北海宾馆寄存背包、吃午饭，能提前入住就让孩子睡个午觉。</td></tr>
+        <tr><th>14:30</th><td>附近短走：<b>清凉台</b>、<b>狮子峰</b>、<b>猴子观海</b>，往返约 1 小时。</td></tr>
+        <tr><th>15:50</th><td>出发经西海饭店去 <b>排云亭</b>看日落（单程约 50 分钟），<b>日落约 17:07</b>。</td></tr>
+        <tr><th>17:20</th><td>打开头灯回宾馆（约 50 分钟）、吃晚饭，<b>21:00 前睡觉</b>。</td></tr>
+      </table>
+      <div class="day-extra">
+        <div><h4>🌇 日落去不去</h4>孩子下午已经累了，就不去排云亭，在宾馆附近的清凉台一带看看晚霞，第二天日出才是重点。</div>
+        <div><h4>🌡 天气</h4>山顶晴，白天约 12°C，日落时降到约 6°C，体感约 2°C。</div>
+      </div>
+    </article>
+
+    <!-- Day 4 -->
+    <article class="card day" id="d4">
+      <div class="day-head">
+        <h3>11/28 周六 · 日出、迎客松、唐模，回厦门</h3>
+        <span class="tag hard">爬山日 · 中午前下山</span>
+      </div>
+      <table class="schedule">
+        <tr><th>05:50</th><td>起床，把所有保暖衣物都穿上。</td></tr>
+        <tr><th>06:15</th><td>去 <b>曙光亭</b>（约 5 分钟）或 <b>清凉台</b>（约 15 分钟）等日出，<b>日出约 06:43</b>。宾馆前台头天晚上会告诉你第二天的日出时间。</td></tr>
+        <tr><th>07:30</th><td>回宾馆吃早饭、退房。</td></tr>
+        <tr><th>08:15</th><td>北海 → <b>光明顶</b>（约 40–50 分钟）。</td></tr>
+        <tr><th>09:15</th><td>光明顶 → 鳌鱼峰 → 百步云梯 → 一线天 → <b>玉屏楼 · 迎客松</b>（约 2 小时）。</td></tr>
+        <tr><th>11:30</th><td>拍完迎客松，<b>玉屏索道</b>下山。<b>周六排队可能要 30–60 分钟。</b></td></tr>
+        <tr><th>12:30</th><td>慈光阁 → 景交车回换乘中心，取行李，在汤口吃午饭。</td></tr>
+        <tr><th>14:00</th><td>汤口 → <b>唐模</b>，打车约 1 小时。</td></tr>
+        <tr><th>15:00</th><td>唐模：沿 <b>檀干溪水街</b>走，看 <b>高阳廊桥</b>、<b>檀干园（小西湖）</b>、<b>同胞翰林坊</b>，约 2 小时。</td></tr>
+        <tr><th>17:00</th><td>唐模 → 黄山北站（约 25 分钟），坐回程动车 <span class="placeholder">回程车次待填</span>。<br><small>建议买 18:00 以后发车的车次；如果车次比较早，就缩短或取消唐模。</small></td></tr>
+      </table>
+      <div class="note warn">
+        <p><b>⚠️ 11/28 下午山顶风大。</b>预报显示中午起山顶阵风 50–66 km/h（约 7–8 级），索道有可能限速或停运。所以行程安排 <b>12 点前上索道</b>。如果早上就发现风很大，改走下面“上黄山路线”里的轻松备选，直接从云谷索道下山。</p>
+      </div>
+      <div class="day-extra">
+        <div><h4>🎫 唐模门票</h4>成人约 80 元（网上有优惠票），17:00 后有夜场票。儿童政策购票时确认。</div>
+        <div><h4>🌡 天气</h4>山顶日出时约 2.6°C、体感约 -1°C；唐模晴，下午约 20°C，温差很大，下山后就脱掉羽绒服。</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 天气 ================= -->
+<section class="section" id="weather">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">WEATHER</p>
+      <h2>天气情况</h2>
+      <p>山顶比山下低 8–10°C，所以宏村、黄山山顶（北海，海拔约 1630 米）、唐模分开列。打开页面会自动拉取最新预报。</p>
+    </div>
+    <p class="wx-status" id="wxStatus" aria-live="polite"><span class="dot"></span>显示的是 2026-11-23 查询的预报，正在尝试更新…</p>
+    <div class="grid" id="wxDays" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))"></div>
+
+    <div class="card" style="margin-top:1.2rem">
+      <h3 style="font-size:1.15rem">山顶逐时：11/27 日落到 11/28 下山</h3>
+      <p style="margin:.3rem 0 0;color:var(--ink-soft);font-size:.92rem">体感温度把风吹的因素算进去了。看日出时人站着不动，会比这个数字感觉更冷。</p>
+      <div class="hourly-wrap">
+        <table class="hourly" id="wxHourly"></table>
+      </div>
+    </div>
+    <p style="font-size:.85rem;color:var(--ink-soft);margin-top:.8rem">数据来源：<a href="https://open-meteo.com/" rel="noopener">Open-Meteo</a> 数值预报模型（按海拔修正）。山区天气变化快，出发前一晚再看一次中国天气网或景区公告。</p>
+  </div>
+</section>
+
+<!-- ================= 穿衣 ================= -->
+<section class="section tint" id="clothing">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">WHAT TO WEAR</p>
+      <h2>穿衣建议</h2>
+      <p>原则是分层穿，方便随时增减。山下白天可以到 20°C，山顶夜里接近 0°C，同一天里要能脱也要能加。</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="font-size:1.15rem">🏯 宏村、唐模（约 2–22°C）</h3>
+        <ul class="layers">
+          <li><b>贴身</b>长袖 T 恤或薄打底</li>
+          <li><b>中间</b>薄毛衣或抓绒</li>
+          <li><b>外层</b>防风外套或轻薄羽绒服。早晚穿，中午脱下塞进包里。</li>
+          <li><b>下装</b>长裤，早晚冷可以加一条薄秋裤</li>
+          <li><b>鞋</b>好走的运动鞋。石板路雨天会滑。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.15rem">⛰️ 黄山山顶（约 0–12°C，风大）</h3>
+        <ul class="layers">
+          <li><b>贴身</b>速干长袖，不穿纯棉。爬台阶出汗后棉衣不干，停下来会冷。</li>
+          <li><b>保暖</b>抓绒衣，再加一件羽绒服（看日出、日落时一定要穿）</li>
+          <li><b>外层</b>防风冲锋衣，日出时大人孩子都要把风挡住</li>
+          <li><b>下装</b>保暖打底裤加防风长裤</li>
+          <li><b>配件</b>帽子（护耳）、手套、围巾或脖套，再备几片暖宝宝</li>
+          <li><b>鞋</b>防滑、包脚踝的徒步鞋。早上背阴台阶可能结霜。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="margin-top:1rem">
+      <h3 style="font-size:1.15rem">🧒 给两个孩子的特别提醒</h3>
+      <ul class="checklist">
+        <li>孩子个子小、散热快，比大人多带一层<span class="who">女儿 · 儿子</span></li>
+        <li>每人一双备用袜子，出汗或踩湿了马上换</li>
+        <li>儿童手套选能抓扶手的，不要连指款</li>
+        <li>帽子要能盖住耳朵，山顶风吹耳朵最难受</li>
+        <li>爬台阶时脱掉羽绒服，停下休息马上穿上</li>
+        <li>颜色鲜艳的外套，人多的地方好找</li>
+        <li>天晴紫外线强，带防晒霜和太阳镜</li>
+        <li>口袋里放一张写有爸妈电话和酒店名的小卡片</li>
+      </ul>
+    </div>
+    <div class="note">
+      <p><b>冰爪要不要带？</b>预报这几天山上没有降水，大概率用不上。如果出发前预报变成雨雪，就在汤口买几副简易冰爪（几十元一副），给孩子也配上。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 上黄山路线 ================= -->
+<section class="section" id="huangshan">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">HUANGSHAN ROUTE</p>
+      <h2>上黄山的路线推荐</h2>
+      <p>住在北海宾馆，推荐 <b>云谷索道上、玉屏索道下</b>。第一天走后山（始信峰、北海），台阶缓、路程短，到酒店早。第二天横穿山顶走到前山看迎客松，再从玉屏索道下，不走回头路。多篇攻略和小红书亲子笔记都推荐这条走法。</p>
+    </div>
+
+    <div class="route-wrap">
+      <figure class="card route-map" style="margin:0">
+        <svg viewBox="0 0 560 560" role="img" aria-labelledby="hsTitle">
+          <title id="hsTitle">黄山山顶路线示意：红线为第一天，绿线为第二天，虚线为可选</title>
+          <rect x="0" y="0" width="560" height="560" rx="14" fill="#f6f3ec"/>
+          <!-- cableways -->
+          <line x1="470" y1="130" x2="520" y2="320" stroke="#3b6c8c" stroke-width="4"/>
+          <line x1="262" y1="412" x2="220" y2="520" stroke="#3b6c8c" stroke-width="4"/>
+          <!-- day1 -->
+          <path d="M470 130 L430 76 L380 92 L336 112" fill="none" stroke="#b4442e" stroke-width="3.5"/>
+          <path d="M336 112 L300 74 L276 96 L336 112" fill="none" stroke="#b4442e" stroke-width="2.5" stroke-dasharray="1 0"/>
+          <path d="M336 112 L206 142 L136 152" fill="none" stroke="#4a575b" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <!-- day2 -->
+          <path d="M336 112 L350 82" fill="none" stroke="#3d6150" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <path d="M336 112 L262 210 L282 270 L270 312 L250 352 L232 390 L262 412" fill="none" stroke="#3d6150" stroke-width="3.5"/>
+          <!-- easy return option -->
+          <path d="M262 210 C 330 190, 420 160, 470 130" fill="none" stroke="#4a575b" stroke-width="2" stroke-dasharray="3 5"/>
+          <!-- nodes -->
+          <g font-size="13" fill="#1f2a2e">
+            <circle cx="520" cy="320" r="6" fill="#3b6c8c"/><text x="440" y="345">云谷寺（索道下站）</text>
+            <circle cx="470" cy="130" r="7" fill="#3b6c8c"/><text x="478" y="124">白鹅岭</text>
+            <circle cx="430" cy="76" r="6" fill="#b4442e"/><text x="420" y="60">始信峰</text>
+            <circle cx="336" cy="112" r="9" fill="#1f2a2e"/><text x="344" y="138" font-weight="700">北海宾馆 🛏</text>
+            <circle cx="350" cy="82" r="5" fill="#3d6150"/><text x="358" y="80">曙光亭 🌅</text>
+            <circle cx="300" cy="74" r="5" fill="#b4442e"/><text x="252" y="58">清凉台 / 狮子峰</text>
+            <circle cx="206" cy="142" r="5" fill="#4a575b"/><text x="172" y="130">西海饭店</text>
+            <circle cx="136" cy="152" r="6" fill="#4a575b"/><text x="70" y="176">排云亭 🌇</text>
+            <circle cx="262" cy="210" r="7" fill="#3d6150"/><text x="186" y="214">光明顶</text>
+            <circle cx="282" cy="270" r="5" fill="#3d6150"/><text x="294" y="274">鳌鱼峰</text>
+            <circle cx="270" cy="312" r="5" fill="#3d6150"/><text x="282" y="316">百步云梯</text>
+            <circle cx="250" cy="352" r="5" fill="#3d6150"/><text x="262" y="356">一线天</text>
+            <circle cx="232" cy="390" r="7" fill="#3d6150"/><text x="110" y="394">玉屏楼 · 迎客松</text>
+            <circle cx="262" cy="412" r="6" fill="#3b6c8c"/><text x="272" y="420">玉屏索道上站</text>
+            <circle cx="220" cy="520" r="6" fill="#3b6c8c"/><text x="232" y="526">慈光阁（索道下站）</text>
+          </g>
+          <text x="20" y="28" font-size="12" fill="#4a575b">N ↑ 示意图，位置与距离不精确</text>
+        </svg>
+        <div class="legend">
+          <span class="l1">11/27 第一天</span>
+          <span class="l2">11/28 第二天</span>
+          <span class="l3">可选 / 备选</span>
+          <span class="l4">索道</span>
+        </div>
+      </figure>
+
+      <div>
+        <div class="card">
+          <h3 style="font-size:1.15rem;margin-bottom:.4rem">11/27 第一天：云谷索道 → 始信峰 → 北海</h3>
+          <ol class="steps d1">
+            <li><span class="t">08:40–09:30</span><br>汤口换乘中心 → 景交车 → 云谷寺 → <b>云谷索道</b>（约 10 分钟）<p>工作日上午排队一般不长。</p></li>
+            <li><span class="t">约 1.5–2 h</span> <span class="lvl mid">中</span><br>白鹅岭 → 黑虎松 → <b>始信峰</b> → 北海宾馆<p>始信峰顶有一小段窄台阶，一个大人在前、一个在后，把孩子夹在中间。</p></li>
+            <li><span class="t">往返约 1 h</span> <span class="lvl">易</span><br>宾馆附近：<b>清凉台、狮子峰、猴子观海</b><p>下午短走，可以顺便踩点，第二天在哪看日出心里有数。</p></li>
+            <li><span class="t">单程约 50 min</span> <span class="lvl mid">中 · 可选</span><br>经西海饭店到 <b>排云亭</b>看日落<p>日落约 17:07，回程天会黑，必须带头灯。孩子累了就不去。</p></li>
+          </ol>
+        </div>
+        <div class="card" style="margin-top:1rem">
+          <h3 style="font-size:1.15rem;margin-bottom:.4rem">11/28 第二天：日出 → 光明顶 → 迎客松 → 玉屏索道</h3>
+          <ol class="steps d2">
+            <li><span class="t">06:15–07:15</span> <span class="lvl">易</span><br><b>曙光亭</b>（宾馆旁，约 5 分钟）或 <b>清凉台</b>（约 15 分钟）看日出<p>光明顶也能看日出，但摸黑走 40 多分钟，带孩子不推荐。</p></li>
+            <li><span class="t">约 40–50 min</span> <span class="lvl mid">中</span><br>北海 → <b>光明顶</b><p>黄山第二高峰，山顶平阔，视野开阔。</p></li>
+            <li><span class="t">约 2 h</span> <span class="lvl hard">中偏难</span><br>光明顶 → 鳌鱼峰 → <b>百步云梯</b> → <b>一线天</b> → 玉屏楼<p>全程最陡的一段。台阶窄、人多，孩子走里侧扶栏杆，不要奔跑。</p></li>
+            <li><span class="t">11:30 前</span> <span class="lvl">易</span><br><b>迎客松</b>合影 → <b>玉屏索道</b>下山<p>周六人多，排队留出 30–60 分钟。</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.3rem;margin:2.2rem 0 .8rem">两种走法怎么选</h3>
+    <div class="compare">
+      <div class="card pick">
+        <h3>✅ 推荐：云谷上，玉屏下</h3>
+        <ul>
+          <li>经典景点都能看到：始信峰、光明顶、迎客松</li>
+          <li>不走回头路</li>
+          <li>第二天走路约 3 小时，有百步云梯、一线天两段陡台阶</li>
+          <li>适合：两个孩子精神好，11/28 早上风不大</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🙂 轻松：云谷上，云谷下</h3>
+        <ul>
+          <li>看完日出 → 光明顶 → 回北海 → 白鹅岭坐云谷索道下山</li>
+          <li>台阶最少，第二天走路约 2 小时</li>
+          <li>云谷索道下行一般比玉屏索道人少</li>
+          <li>缺点：看不到迎客松</li>
+          <li>适合：孩子累了，或者早上风已经很大</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="font-size:1.3rem;margin:2.2rem 0 .8rem">门票与索道费用</h3>
+    <div class="card">
+      <table class="price">
+        <thead><tr><th>项目</th><th>成人</th><th>孩子（9 岁、7 岁）</th><th>说明</th></tr></thead>
+        <tbody>
+          <tr><td>黄山门票</td><td>190 元</td><td><b>免首道门票</b>（2026-09-21 至 12-31，18 周岁及以下）</td><td>孩子也要在“黄山旅游官方平台”小程序<b>实名预约</b>。门票 3 天内有效。</td></tr>
+          <tr><td>景交车（单程）</td><td>约 19 元</td><td>以小程序为准</td><td>上山、下山各坐一次。</td></tr>
+          <tr><td>云谷索道（单程）</td><td>80 元</td><td>身高 1.2–1.5 米半价（旧政策，以现场为准）</td><td>上山</td></tr>
+          <tr><td>玉屏索道（单程）</td><td>90 元</td><td>同上</td><td>下山</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:.85rem;color:var(--ink-soft);margin:.6rem 0 0">门票和索道价格适用于 2026-01-21 至 12-19。儿童免票政策来自重庆日报（2026-09-22）、新浪（2026-10）的报道，没有打开官方原文，预约时以小程序显示为准。</p>
+    </div>
+
+    <h3 style="font-size:1.3rem;margin:2.2rem 0 .8rem">遇到意外情况怎么办</h3>
+    <div class="card">
+      <table class="price plan-b">
+        <tbody>
+          <tr><td>🌬 11/28 早上风已经很大</td><td>改走轻松备选，从云谷索道下山。大风时索道可能限速或停运，越早下越稳。</td></tr>
+          <tr><td>🚡 索道停运</td><td>听工作人员安排。必须步行下山的话，带孩子从云谷步道下山约 2.5–3.5 小时，非常累膝盖，大人用登山杖，孩子慢慢走。</td></tr>
+          <tr><td>🌫 起雾看不到日出</td><td>先等 20 分钟，云雾经常散开。实在看不到就回宾馆吃早饭，按原计划走。</td></tr>
+          <tr><td>😫 孩子走不动</td><td>光明顶是分岔点：从这里回北海、坐云谷索道下，比继续走到玉屏楼省力得多。</td></tr>
+          <tr><td>⏰ 下山晚了，赶不上动车</td><td>直接取消唐模，从汤口打车去黄山北站（约 1 小时）。</td></tr>
+          <tr><td>🚑 紧急情况</td><td>黄山景区救援电话 <a href="tel:05595563333">0559-5563333</a>；旅游咨询 <a href="tel:05592590999">0559-2590999</a>；急救 120，报警 110。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note">
+      <p>天都峰要单独预约，台阶极陡；莲花峰经常轮休封闭；西海大峡谷全程要半天以上。这三处都不适合这次带 7 岁、9 岁孩子的行程，所以没有放进路线。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 清单 ================= -->
+<section class="section tint" id="tips">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">BEFORE YOU GO</p>
+      <h2>出发前清单</h2>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3 style="font-size:1.15rem">📋 预约与确认</h3>
+        <ul class="checklist" style="columns:1">
+          <li>在“黄山旅游官方平台”小程序预约 11/27 门票，全家四人实名，选“云谷”方向（景区建议至少提前 3 天）</li>
+          <li>确认北海宾馆订单，问清能否提前寄存背包</li>
+          <li>购买回程动车票，最好是 11/28 18:00 以后发车</li>
+          <li>确认宏村门票和儿童票政策</li>
+          <li>预约 11/25 黄山北 → 宏村、11/27 宏村 → 汤口、11/28 汤口 → 唐模 → 黄山北的车</li>
+          <li>出发前一晚再看一次天气，以及黄山景区公告（索道是否检修）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.15rem">🎒 上山背包（每个大人一个）</h3>
+        <ul class="checklist" style="columns:1">
+          <li>四人份羽绒服、帽子、手套</li>
+          <li>头灯或手电（看日出、日落时用）</li>
+          <li>水和零食：山上东西贵，在汤口先买好</li>
+          <li>充电宝、身份证（孩子的户口本或身份证）</li>
+          <li>常用药：创可贴、退烧药、晕车药</li>
+          <li>1 套第二天换洗的贴身衣物和袜子</li>
+          <li>大人每人一根登山杖（换乘中心附近可以买）</li>
+        </ul>
+      </div>
+    </div>
+    <div class="note warn">
+      <p>页面里的时间、价格只用于规划，出发时请以景区官方公告、12306 和实时导航为准。</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="sources">
+  <div class="shell">
+    <h2>资料来源</h2>
+    <ul>
+      <li>门票、索道价格、预约规则、推荐走法：<a href="https://wayschina.com/ja/articles/huangshan-guide" rel="noopener">wayschina 黄山攻略（2026-11 更新，引用黄山市政府价格公告）</a></li>
+      <li>旺季开放时间：<a href="https://note.com/megane_shuaige/n/n81af00706394" rel="noopener">note.com 黄山交通整理（2025-03）</a></li>
+      <li>18 周岁及以下免首道门票：重庆日报 2026-09-22、新浪 2026-10 报道（见调研文档）</li>
+      <li>宏村门票与交通：<a href="https://note.com/tonari_china/n/n5b3987cb252c" rel="noopener">note.com 宏村整理（2026-11）</a></li>
+      <li>小红书亲子路线、穿衣经验：通过 360 搜索看到的笔记摘要</li>
+      <li>天气：<a href="https://open-meteo.com/" rel="noopener">Open-Meteo</a></li>
+      <li>完整调研记录：<a href="./docs/travel/2026-huangshan-family-trip-research.md">docs/travel/2026-huangshan-family-trip-research.md</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var DATES = ["2026-11-25", "2026-11-26", "2026-11-27", "2026-11-28"];
+  var WEEK = ["周三", "周四", "周五", "周六"];
+  var PLACES = [
+    { id: "hongcun", name: "宏村", sub: "海拔约 150 米", lat: 30.0, lon: 117.99, elev: 150 },
+    { id: "peak", name: "黄山山顶 · 北海", sub: "海拔约 1630 米", lat: 30.135, lon: 118.165, elev: 1630 },
+    { id: "tangmo", name: "唐模", sub: "海拔约 150 米", lat: 29.85, lon: 118.34, elev: 150 }
+  ];
+  // 每天在哪些地方
+  var DAY_PLACES = [["hongcun"], ["hongcun"], ["hongcun", "peak"], ["peak", "tangmo"]];
+  var DAY_TITLES = ["到宏村", "宏村慢游", "上黄山", "下山 · 唐模"];
+  var HOURS = [
+    ["2026-11-27T12:00", "27日 12:00", "到北海宾馆"],
+    ["2026-11-27T15:00", "27日 15:00", "下午短走"],
+    ["2026-11-27T17:00", "27日 17:00", "日落"],
+    ["2026-11-27T20:00", "27日 20:00", "晚上"],
+    ["2026-11-28T04:00", "28日 04:00", "凌晨最冷"],
+    ["2026-11-28T06:00", "28日 06:00", "等日出"],
+    ["2026-11-28T09:00", "28日 09:00", "光明顶"],
+    ["2026-11-28T12:00", "28日 12:00", "坐索道"],
+    ["2026-11-28T15:00", "28日 15:00", "已下山"]
+  ];
+
+  // 2026-11-23 查询的 Open-Meteo 预报（兜底数据）
+  var FALLBACK = {
+    fetchedAt: "2026-11-23",
+    daily: {
+      hongcun: { code: [3, 51, 0, 0], max: [13.8, 17.9, 21.3, 22.2], min: [2.1, 8.7, 9.8, 4.5], pop: [0, 6, 0, 0], gust: [23.0, 29.2, 25.2, 46.4] },
+      peak:    { code: [3, 51, 0, 0], max: [5.9, 9.3, 12.4, 12.5], min: [-6.3, -1.4, 0.7, -3.4], pop: [0, 6, 0, 2], gust: [38.5, 43.6, 32.0, 65.9] },
+      tangmo:  { code: [3, 3, 1, 1], max: [13.5, 18.4, 20.1, 22.0], min: [0.5, 6.2, 4.6, 4.7], pop: [0, 6, 0, 0], gust: [13.3, 17.3, 14.4, 33.1] }
+    },
+    sun: { sunrise: ["06:40", "06:41", "06:42", "06:43"], sunset: ["17:07", "17:07", "17:07", "17:07"] },
+    hourly: {
+      "2026-11-27T12:00": [12.1, 9.3, 17.6, 0],
+      "2026-11-27T15:00": [10.4, 6.8, 23.8, 0],
+      "2026-11-27T17:00": [5.8, 2.3, 31.0, 0],
+      "2026-11-27T20:00": [3.1, 0.3, 31.0, 0],
+      "2026-11-28T04:00": [1.4, -1.7, 17.3, 0],
+      "2026-11-28T06:00": [2.6, -0.6, 20.5, 0],
+      "2026-11-28T09:00": [7.6, 4.1, 32.8, 0],
+      "2026-11-28T12:00": [12.3, 8.0, 52.9, 0],
+      "2026-11-28T15:00": [11.3, 6.3, 65.9, 0]
+    }
+  };
+
+  function wmo(code) {
+    if (code === 0) return ["☀️", "晴"];
+    if (code === 1) return ["🌤️", "晴间多云"];
+    if (code === 2) return ["⛅", "多云"];
+    if (code === 3) return ["☁️", "阴"];
+    if (code === 45 || code === 48) return ["🌫️", "雾"];
+    if (code >= 51 && code <= 57) return ["🌦️", "毛毛雨"];
+    if (code >= 61 && code <= 67) return ["🌧️", "雨"];
+    if (code >= 71 && code <= 77) return ["🌨️", "雪"];
+    if (code >= 80 && code <= 82) return ["🌦️", "阵雨"];
+    if (code === 85 || code === 86) return ["🌨️", "阵雪"];
+    if (code >= 95) return ["⛈️", "雷雨"];
+    return ["🌡️", "—"];
+  }
+  function r(n) { return (Math.round(n * 10) / 10).toFixed(0); }
+  function gustText(g) {
+    var level = g >= 62 ? "约 8 级" : g >= 50 ? "约 7 级" : g >= 39 ? "约 6 级" : g >= 29 ? "约 5 级" : "4 级以下";
+    var cls = g >= 50 ? ' class="gust-strong"' : "";
+    return '<span' + cls + '>阵风 ' + r(g) + ' km/h（' + level + '）</span>';
+  }
+  function placeById(id) { for (var i = 0; i < PLACES.length; i++) if (PLACES[i].id === id) return PLACES[i]; }
+
+  function renderDaily(data) {
+    var box = document.getElementById("wxDays");
+    var html = "";
+    for (var d = 0; d < DATES.length; d++) {
+      html += '<div class="card wx-day"><h3>' + DATES[d].slice(5).replace("-", "/") + " " + WEEK[d] +
+        ' · ' + DAY_TITLES[d] + '<br><small>日出 ' + data.sun.sunrise[d] + ' · 日落 ' + data.sun.sunset[d] + '</small></h3>';
+      for (var p = 0; p < DAY_PLACES[d].length; p++) {
+        var id = DAY_PLACES[d][p];
+        var pl = placeById(id);
+        var dd = data.daily[id];
+        var w = wmo(dd.code[d]);
+        html += '<div class="wx-place' + (id === "peak" ? " peak" : "") + '">' +
+          '<span class="ico" aria-hidden="true">' + w[0] + '</span>' +
+          '<span class="name">' + pl.name + '<small>' + pl.sub + '</small></span>' +
+          '<span class="temp"><span class="lo">' + r(dd.min[d]) + '°</span> / <span class="hi">' + r(dd.max[d]) + '°</span></span>' +
+          '<span class="meta">' + w[1] + ' · 降水概率 ' + r(dd.pop[d]) + '% · ' + gustText(dd.gust[d]) + '</span>' +
+          '</div>';
+      }
+      html += "</div>";
+    }
+    box.innerHTML = html;
+  }
+
+  function renderHourly(data) {
+    var t = document.getElementById("wxHourly");
+    var head = "<thead><tr><th>北海一带</th>";
+    var rowT = "<tr><th>气温</th>", rowA = "<tr><th>体感</th>", rowG = "<tr><th>阵风</th>", rowW = "<tr><th>天气</th>";
+    for (var i = 0; i < HOURS.length; i++) {
+      var v = data.hourly[HOURS[i][0]];
+      head += "<th>" + HOURS[i][1] + "<br><small>" + HOURS[i][2] + "</small></th>";
+      if (!v) { rowT += "<td>—</td>"; rowA += "<td>—</td>"; rowG += "<td>—</td>"; rowW += "<td>—</td>"; continue; }
+      rowT += "<td>" + r(v[0]) + "°C</td>";
+      rowA += "<td>" + r(v[1]) + "°C</td>";
+      rowG += "<td" + (v[2] >= 50 ? ' class="gust-strong"' : "") + ">" + r(v[2]) + "</td>";
+      rowW += "<td>" + wmo(v[3])[0] + "</td>";
+    }
+    t.innerHTML = head + "</tr></thead><tbody>" + rowW + "</tr>" + rowT + "</tr>" + rowA + "</tr>" + rowG + "</tr></tbody>" +
+      '<caption style="caption-side:bottom;text-align:left;font-size:.8rem;color:#4a575b;padding-top:.4rem">阵风单位 km/h；50 以上（约 7 级）标红，索道有可能限速或停运。</caption>';
+  }
+
+  function setStatus(text, live) {
+    var el = document.getElementById("wxStatus");
+    el.className = "wx-status" + (live ? " live" : "");
+    el.innerHTML = '<span class="dot"></span>' + text;
+  }
+
+  function fromApi(json) {
+    var out = { daily: {}, sun: { sunrise: [], sunset: [] }, hourly: {} };
+    for (var i = 0; i < PLACES.length; i++) {
+      var dly = json[i].daily;
+      out.daily[PLACES[i].id] = {
+        code: dly.weather_code, max: dly.temperature_2m_max, min: dly.temperature_2m_min,
+        pop: dly.precipitation_probability_max.map(function (x) { return x == null ? 0 : x; }),
+        gust: dly.wind_gusts_10m_max
+      };
+      if (PLACES[i].id === "peak") {
+        out.sun.sunrise = dly.sunrise.map(function (s) { return s.slice(11, 16); });
+        out.sun.sunset = dly.sunset.map(function (s) { return s.slice(11, 16); });
+        var h = json[i].hourly;
+        for (var k = 0; k < h.time.length; k++) {
+          out.hourly[h.time[k]] = [h.temperature_2m[k], h.apparent_temperature[k], h.wind_gusts_10m[k], h.weather_code[k]];
+        }
+      }
+    }
+    // 基本校验：缺数据就抛错走兜底
+    if (out.daily.peak.max.length !== 4 || out.daily.peak.max[0] == null) throw new Error("incomplete");
+    return out;
+  }
+
+  renderDaily(FALLBACK);
+  renderHourly(FALLBACK);
+
+  var url = "https://api.open-meteo.com/v1/forecast" +
+    "?latitude=" + PLACES.map(function (p) { return p.lat; }).join(",") +
+    "&longitude=" + PLACES.map(function (p) { return p.lon; }).join(",") +
+    "&elevation=" + PLACES.map(function (p) { return p.elev; }).join(",") +
+    "&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,wind_gusts_10m_max,sunrise,sunset" +
+    "&hourly=temperature_2m,apparent_temperature,wind_gusts_10m,weather_code" +
+    "&timezone=Asia%2FShanghai&start_date=" + DATES[0] + "&end_date=" + DATES[3];
+
+  var ctrl = typeof AbortController !== "undefined" ? new AbortController() : null;
+  var timer = setTimeout(function () { if (ctrl) ctrl.abort(); }, 10000);
+
+  fetch(url, ctrl ? { signal: ctrl.signal } : {})
+    .then(function (res) { if (!res.ok) throw new Error("HTTP " + res.status); return res.json(); })
+    .then(function (json) {
+      clearTimeout(timer);
+      var data = fromApi(Array.isArray(json) ? json : [json]);
+      renderDaily(data);
+      renderHourly(data);
+      var now = new Date();
+      var stamp = (now.getMonth() + 1) + "月" + now.getDate() + "日 " +
+        String(now.getHours()).padStart(2, "0") + ":" + String(now.getMinutes()).padStart(2, "0");
+      setStatus("已更新为最新预报（" + stamp + " 获取）。", true);
+    })
+    .catch(function () {
+      clearTimeout(timer);
+      setStatus("没能连上天气服务，下面显示的是 2026-11-23 查询的预报。", false);
+    });
+})();
+</script>
+</body>
+</html>
