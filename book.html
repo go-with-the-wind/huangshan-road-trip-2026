@@ -516,6 +516,28 @@ html { scroll-behavior: auto; }
   .sheet, .sheet::after { animation: none !important; }
 }
 
+/* ---------- mountain pages: granite, pine and sunrise ---------- */
+.page--peak {
+  --granite: #e4e8e7;       /* cool weathered granite instead of paper */
+  --granite-edge: #c9d1cf;
+  --pine-deep: #2c5444;     /* Huangshan pine needles */
+  --sunrise: #c47f1e;       /* first light on the peaks */
+  background: var(--granite);
+}
+.page--peak .sheet { background: var(--granite); }
+.page--peak .runhead { color: var(--pine-deep); border-bottom-color: var(--granite-edge); }
+.page--peak .folio { color: var(--pine-deep); }
+.page--peak .eyebrow { color: var(--pine-deep); }
+.page--peak h2, .page--peak h3 { color: #1d3a30; }
+.page--peak .schedule th { color: var(--pine-deep); }
+.page--peak .schedule th, .page--peak .schedule td,
+.page--peak .card { border-color: var(--granite-edge); }
+.page--peak .card, .page--peak .day-extra div { background: rgba(255, 255, 255, .45); }
+.page--peak .sun { color: var(--sunrise); }
+.page--peak .sun::before { content: "☀ "; font-weight: 400; }
+.page--peak .sheet-body table.hourly :is(th, td):first-child { background: var(--granite); }
+.page--peak .sheet-body table.hourly thead th { background: var(--granite-edge); }
+
   </style>
 </head>
 <body class="book-body">
@@ -665,8 +687,8 @@ html { scroll-behavior: auto; }
       </div>
     </article></div><p class="folio" aria-hidden="true">5</p></div>
 </article>
-<article class="page" id="p-d3" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 6 页，共 18 页：11/27 上黄山" data-title="11/27 上黄山">
-<div class="sheet"><p class="runhead" aria-hidden="true"><span>徽州五日</span><span>11/27 上黄山</span></p><div class="sheet-body"><article class="day" id="d3">
+<article class="page page--peak" id="p-d3" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 6 页，共 18 页：11/27 上黄山" data-title="11/27 上黄山">
+<div class="sheet"><p class="runhead" aria-hidden="true"><span>黄山 · 海拔约 1630 米</span><span>11/27 上黄山</span></p><div class="sheet-body"><article class="day" id="d3">
       <div class="day-head">
         <h3>11/27 周五 · 玉屏索道上山，住北海</h3>
         <span class="tag hard">爬山日 · 走路约 4 小时</span>
@@ -679,7 +701,7 @@ html { scroll-behavior: auto; }
         <tr><th>10:30</th><td>去光明顶：岔路口优先选 <b>莲花栈道</b>，单向、短、不陡，视天气和人流开放。没开就走 <b>一线天 → 百步云梯 → 鳌鱼峰</b>，最陡的一段，牵好孩子。</td></tr>
         <tr><th>12:30</th><td>光明顶一带吃午饭：天海美食广场或光明顶的热食摊（汉堡 19–38 元，快餐约 45 元）。</td></tr>
         <tr><th>13:30</th><td>光明顶 → <b>北海宾馆</b>（约 40–50 分钟，以下坡为主），约 14:30–15:00 入住，让孩子休息。</td></tr>
-        <tr><th>16:30</th><td>跟酒店管家去看日落（管家会带队），<b>日落约 17:07</b>。</td></tr>
+        <tr><th>16:30</th><td>跟酒店管家去看日落（管家会带队），<b class="sun">日落约 17:07</b>。</td></tr>
         <tr><th>18:00</th><td>晚饭：酒店自助约 198 元/位。大堂晚上有表演和鱼灯，孩子喜欢。<b>21:00 前睡觉。</b></td></tr>
       </table>
       <div class="note good">
@@ -691,15 +713,15 @@ html { scroll-behavior: auto; }
       </div>
     </article></div><p class="folio" aria-hidden="true">6</p></div>
 </article>
-<article class="page" id="p-d4" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 7 页，共 18 页：11/28 下山 · 唐模" data-title="11/28 下山 · 唐模">
-<div class="sheet"><p class="runhead" aria-hidden="true"><span>徽州五日</span><span>11/28 下山 · 唐模</span></p><div class="sheet-body"><article class="day" id="d4">
+<article class="page page--peak" id="p-d4" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 7 页，共 18 页：11/28 下山 · 唐模" data-title="11/28 下山 · 唐模">
+<div class="sheet"><p class="runhead" aria-hidden="true"><span>黄山 · 海拔约 1630 米</span><span>11/28 下山 · 唐模</span></p><div class="sheet-body"><article class="day" id="d4">
       <div class="day-head">
         <h3>11/28 周六 · 日出、始信峰，下山去唐模</h3>
         <span class="tag">轻松下坡 · 晚上看鳌鱼灯</span>
       </div>
       <table class="schedule">
         <tr><th>05:50</th><td>起床，把保暖衣物都穿上（房间里的羽绒服可以穿出去）。</td></tr>
-        <tr><th>06:10</th><td>跟管家去 <b>始信峰蘑菇亭</b> 或 <b>曙光亭</b> 看日出，从宾馆走 20 分钟左右，<b>日出约 06:43</b>。</td></tr>
+        <tr><th>06:10</th><td>跟管家去 <b>始信峰蘑菇亭</b> 或 <b>曙光亭</b> 看日出，从宾馆走 20 分钟左右，<b class="sun">日出约 06:43</b>。</td></tr>
         <tr><th>07:30</th><td>回宾馆吃自助早餐（6:00–9:00），退房。</td></tr>
         <tr><th>08:20</th><td><b>梦笔生花</b>（宾馆下面的观景台就能看到） → <b>猴子观海</b>（远看就好，不用专门爬上去） → 黑虎松 → <b>始信峰</b> → 白鹅岭。</td></tr>
         <tr><th>10:30 前</th><td><b>云谷索道</b>下山。网友说上午 10 点左右基本不排队，下午两点后要排 40 分钟以上。</td></tr>
@@ -801,8 +823,8 @@ html { scroll-behavior: auto; }
     </div>
   </div><p class="folio" aria-hidden="true">10</p></div>
 </article>
-<article class="page" id="p-hs-crowd" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 11 页，共 18 页：黄山 · 人流" data-title="黄山 · 人流">
-<div class="sheet"><p class="runhead" aria-hidden="true"><span>徽州五日</span><span>黄山 · 人流</span></p><div class="sheet-body">
+<article class="page page--peak" id="p-hs-crowd" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 11 页，共 18 页：黄山 · 人流" data-title="黄山 · 人流">
+<div class="sheet"><p class="runhead" aria-hidden="true"><span>黄山 · 海拔约 1630 米</span><span>黄山 · 人流</span></p><div class="sheet-body">
     <div class="section-head">
       <p class="eyebrow">HUANGSHAN ROUTE</p>
       <h2>上黄山的路线推荐</h2>
@@ -825,8 +847,8 @@ html { scroll-behavior: auto; }
 
     </div><p class="folio" aria-hidden="true">11</p></div>
 </article>
-<article class="page" id="p-hs-route" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 12 页，共 18 页：黄山 · 路线" data-title="黄山 · 路线">
-<div class="sheet"><p class="runhead" aria-hidden="true"><span>徽州五日</span><span>黄山 · 路线</span></p><div class="sheet-body"><div class="section-head"><p class="eyebrow">HUANGSHAN ROUTE</p><h2>两天的路线</h2></div><div class="route-wrap" style="margin-top:2rem">
+<article class="page page--peak" id="p-hs-route" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 12 页，共 18 页：黄山 · 路线" data-title="黄山 · 路线">
+<div class="sheet"><p class="runhead" aria-hidden="true"><span>黄山 · 海拔约 1630 米</span><span>黄山 · 路线</span></p><div class="sheet-body"><div class="section-head"><p class="eyebrow">HUANGSHAN ROUTE</p><h2>两天的路线</h2></div><div class="route-wrap" style="margin-top:2rem">
       <figure class="card route-map" style="margin:0">
         <svg viewBox="0 0 560 560" role="img" aria-labelledby="hsTitle">
           <title id="hsTitle">黄山山顶路线示意：红线为第一天，绿线为第二天，虚线为备选</title>
@@ -889,8 +911,8 @@ html { scroll-behavior: auto; }
 
     </div><p class="folio" aria-hidden="true">12</p></div>
 </article>
-<article class="page" id="p-hs-more" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 13 页，共 18 页：黄山 · 费用与预案" data-title="黄山 · 费用与预案">
-<div class="sheet"><p class="runhead" aria-hidden="true"><span>徽州五日</span><span>黄山 · 费用与预案</span></p><div class="sheet-body"><div class="section-head"><p class="eyebrow">HUANGSHAN ROUTE</p><h2>走法、费用与预案</h2></div><h3 style="font-size:1.3rem;margin:2.2rem 0 .8rem">两种走法怎么选</h3>
+<article class="page page--peak" id="p-hs-more" tabindex="-1" role="group" aria-roledescription="页" aria-label="第 13 页，共 18 页：黄山 · 费用与预案" data-title="黄山 · 费用与预案">
+<div class="sheet"><p class="runhead" aria-hidden="true"><span>黄山 · 海拔约 1630 米</span><span>黄山 · 费用与预案</span></p><div class="sheet-body"><div class="section-head"><p class="eyebrow">HUANGSHAN ROUTE</p><h2>走法、费用与预案</h2></div><h3 style="font-size:1.3rem;margin:2.2rem 0 .8rem">两种走法怎么选</h3>
     <div class="compare">
       <div class="card pick">
         <h3>✅ 推荐：玉屏上，云谷下</h3>
